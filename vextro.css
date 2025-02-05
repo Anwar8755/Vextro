@@ -1,0 +1,122 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('./bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: auto;
+    overflow-x: hidden; 
+}
+
+/* Logo  design */
+.logo img {
+    width: 150px; 
+    margin-left: 3%;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+nav button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+/* textarea design */
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42vw;
+    height: 20vh;
+    margin: 15vw auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 30px #ADEAFD;
+    border: 1px solid white;
+    max-width: 90vw;
+}
+
+.textarea textarea {
+    width: 35vw;
+    height: 12vh;
+    outline: none;
+    border: none;
+    font-size: 1.2vw;
+    color: #ADEAFD;
+    background: transparent;
+    resize: none;
+}
+
+.chtbtn button {
+    margin-top: 3.5vw;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+}
+
+.popup-content input {
+    display: block;
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.popup-content button {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive design*/
+@media (max-width: 768px) {
+    .message {
+        width: 90%;
+    }
+}
